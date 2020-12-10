@@ -5,9 +5,9 @@ cascadefile = "datas/haar_cascade_files/haarcascade_frontalface_default.xml"
 # cascadefile = "datas/haar_cascade_files/haarcascade_mcs_nose.xml"
 cascade = cv.CascadeClassifier(cascadefile)
 
-filepath = 'datas/images/lena.png'    # single human
+# filepath = 'datas/images/lena.png'    # single human
 # filepath = 'datas/images/faces.jpg'      # few human -> one missing
-# filepath = 'datas/images/people.jpg'    # a lot human -> can't detect little bit
+filepath = 'datas/images/people.jpg'    # a lot human -> can't detect little bit
 img = cv.imread(filepath)
 # faces = cascade.detectMultiScale(img, 1.1, 4)
 
